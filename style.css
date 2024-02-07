@@ -1,0 +1,90 @@
+.fanImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fanImg img {
+    width: 30%;
+    height: 30%;
+    padding: 3%;
+    border: 12px solid #4b9eb9;
+    border-radius: 50%;
+    animation: fan linear infinite ;
+}
+
+@keyframes fan {
+    100% {
+        transform: rotate(360deg);
+    }    
+}
+
+.switch {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0;
+    gap: 3rem;
+}
+
+.switch input {
+    background: none;
+    border: 2px solid #499ab4;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+    font-weight: bolder;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#on {
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+}
+
+#off {
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .fanImg img {
+        width: 40%;
+        height: 40%;
+        padding: 3%;
+        border: 10px solid #4b9eb9;
+        border-radius: 50%;
+        animation: fan linear infinite ;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .fanImg img {
+        width: 60%;
+        height: 60%;
+        padding: 3%;
+        border: 8px solid #4b9eb9;
+        border-radius: 50%;
+        animation: fan linear infinite ;
+    }
+    .switch {
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 360px){
+    .fanImg img {
+        width: 85%;
+        height: 85%;
+        padding: 3%;
+        border: 6px solid #4b9eb9;
+        border-radius: 50%;
+        animation: fan linear infinite ;
+    }
+    .switch {
+        gap: 0.5rem;
+    }
+}
