@@ -6,7 +6,7 @@ const twoSpeed = document.getElementById("twoSpeed");
 const threespeed = document.getElementById("threeSpeed");
 
 on.addEventListener("click", () => {
-    fan.style.animationDuration = "2s";
+    fan.style.animationDuration = "1s";
     oneSpeed.style.backgroundColor = "#4b9eb9";
     oneSpeed.style.color = "white";
     twoSpeed.style.backgroundColor = "";
@@ -25,7 +25,7 @@ off.addEventListener("click", () => {
 })
 
 oneSpeed.addEventListener("click", () => {
-    fan.style.animationDuration = "2s";
+    fan.style.animationDuration = "1s";
     oneSpeed.style.backgroundColor = "#4b9eb9";
     oneSpeed.style.color = "white";
     twoSpeed.style.backgroundColor = "";
